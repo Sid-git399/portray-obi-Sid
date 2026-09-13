@@ -1,0 +1,3 @@
+Place ici les fichiers PDF/Excel/Word pre-generes pour le mode demo (OBI_MODE=demo).
+Nom attendu : <nom-du-fichier-xdo-normalise>.<extension>
+Exemple : LISTE_COMPTES_CLIENTS.pdf, SOLDE_DU_COMPTE.xlsx
