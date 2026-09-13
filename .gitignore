@@ -1,0 +1,6 @@
+/vendor/
+.env
+/logs/*.log
+test_obi.php
+test_output.*
+.DS_Store
