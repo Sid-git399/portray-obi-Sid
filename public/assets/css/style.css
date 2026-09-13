@@ -1,0 +1,357 @@
+:root {
+    --obi-navy: #0b2447;
+    --obi-navy-dark: #071a34;
+    --obi-blue: #1e5fa8;
+    --obi-blue-light: #2f7fd1;
+    --obi-gold: #c8a75a;
+    --obi-bg: #f4f7fb;
+    --obi-card-shadow: 0 4px 18px rgba(11, 36, 71, 0.08);
+    --obi-radius: 14px;
+}
+
+body {
+    background: var(--obi-bg);
+    font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+    color: #1d2939;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-obi {
+    background: linear-gradient(135deg, var(--obi-navy) 0%, var(--obi-navy-dark) 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.navbar-obi .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .3px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navbar-obi .navbar-brand .logo-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--obi-gold), #e6c983);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--obi-navy-dark);
+    font-weight: 800;
+    font-size: .95rem;
+}
+
+.navbar-obi .nav-link {
+    color: rgba(255,255,255,.85) !important;
+    font-weight: 500;
+}
+
+.navbar-obi .nav-link:hover,
+.navbar-obi .nav-link.active {
+    color: #fff !important;
+}
+
+.navbar-obi .btn-connexion {
+    background: var(--obi-gold);
+    color: var(--obi-navy-dark);
+    font-weight: 600;
+    border: none;
+}
+
+.navbar-obi .btn-connexion:hover {
+    background: #d8b869;
+    color: var(--obi-navy-dark);
+}
+
+/* ---------- Hero ---------- */
+.hero-obi {
+    background: linear-gradient(135deg, var(--obi-navy) 0%, var(--obi-blue) 100%);
+    color: #fff;
+    padding: 5rem 0 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-obi::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: -80px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+}
+
+.hero-obi h1 {
+    font-weight: 800;
+    font-size: 2.6rem;
+}
+
+.hero-obi .lead {
+    color: rgba(255,255,255,.85);
+    font-size: 1.15rem;
+}
+
+.hero-obi .btn-hero {
+    background: var(--obi-gold);
+    border: none;
+    color: var(--obi-navy-dark);
+    font-weight: 700;
+    padding: .75rem 2rem;
+    border-radius: 999px;
+    transition: transform .15s ease;
+}
+
+.hero-obi .btn-hero:hover {
+    transform: translateY(-2px);
+    color: var(--obi-navy-dark);
+}
+
+/* ---------- Feature / step cards ---------- */
+.feature-card, .step-card {
+    background: #fff;
+    border-radius: var(--obi-radius);
+    box-shadow: var(--obi-card-shadow);
+    padding: 2rem 1.5rem;
+    height: 100%;
+    border: 1px solid rgba(11,36,71,0.05);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.feature-card:hover, .step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(11,36,71,0.12);
+}
+
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--obi-blue-light), var(--obi-blue));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.step-number {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--obi-navy);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Cards / catalogue ---------- */
+.card-obi {
+    border: none;
+    border-radius: var(--obi-radius);
+    box-shadow: var(--obi-card-shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+    height: 100%;
+}
+
+.card-obi:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(11,36,71,0.14);
+}
+
+.card-obi .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-categorie {
+    background: rgba(30, 95, 168, 0.1);
+    color: var(--obi-blue);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: .35rem .75rem;
+}
+
+.card-obi .btn-consulter {
+    background: var(--obi-navy);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card-obi .btn-consulter:hover {
+    background: var(--obi-blue);
+    color: #fff;
+}
+
+/* ---------- Sidebar filters ---------- */
+.sidebar-filtres {
+    background: #fff;
+    border-radius: var(--obi-radius);
+    box-shadow: var(--obi-card-shadow);
+    padding: 1.5rem;
+}
+
+.sidebar-filtres .list-group-item {
+    border: none;
+    border-radius: 8px !important;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.sidebar-filtres .list-group-item.active {
+    background: var(--obi-navy);
+    border-color: var(--obi-navy);
+}
+
+/* ---------- Auth card ---------- */
+.card-login {
+    border: none;
+    border-radius: var(--obi-radius);
+    box-shadow: 0 12px 36px rgba(11,36,71,0.18);
+}
+
+.card-login .card-header {
+    background: linear-gradient(135deg, var(--obi-navy), var(--obi-blue));
+    color: #fff;
+    border-radius: var(--obi-radius) var(--obi-radius) 0 0 !important;
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.card-login .card-header .logo-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--obi-gold), #e6c983);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--obi-navy-dark);
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+}
+
+.btn-obi-primary {
+    background: var(--obi-navy);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-obi-primary:hover {
+    background: var(--obi-blue);
+    color: #fff;
+}
+
+/* ---------- Admin sidebar ---------- */
+.admin-shell {
+    display: flex;
+    min-height: calc(100vh - 64px);
+}
+
+.admin-sidebar {
+    width: 250px;
+    background: var(--obi-navy-dark);
+    color: #fff;
+    flex-shrink: 0;
+    padding: 1.5rem 0;
+}
+
+.admin-sidebar a {
+    display: block;
+    padding: .75rem 1.5rem;
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.admin-sidebar a:hover {
+    background: rgba(255,255,255,.06);
+    color: #fff;
+}
+
+.admin-sidebar a.active {
+    background: rgba(255,255,255,.08);
+    color: #fff;
+    border-left-color: var(--obi-gold);
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: var(--obi-radius);
+    box-shadow: var(--obi-card-shadow);
+    padding: 1.5rem;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--obi-navy);
+}
+
+.stat-card .stat-label {
+    color: #667085;
+    font-weight: 500;
+}
+
+/* ---------- Misc ---------- */
+.table-obi thead {
+    background: var(--obi-navy);
+    color: #fff;
+}
+
+.footer-obi {
+    background: var(--obi-navy-dark);
+    color: rgba(255,255,255,.7);
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+}
+
+.footer-obi a {
+    color: rgba(255,255,255,.85);
+}
+
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(11,36,71,0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    color: #fff;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loading-overlay.active {
+    display: flex;
+}
+
+.spinner-obi {
+    width: 56px;
+    height: 56px;
+    border: 5px solid rgba(255,255,255,.25);
+    border-top-color: var(--obi-gold);
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
